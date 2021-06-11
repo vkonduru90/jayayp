@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { title } from 'process';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Jaya';
+  //   myClick() { 
+  //       this.title;
+     
+  //     alert(this.title);
+  //     // console.log(namenew)
+  //     // console.log(event);
+  //  }
 }

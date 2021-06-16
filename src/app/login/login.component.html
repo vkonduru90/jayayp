@@ -1,46 +1,50 @@
 <p>login works!</p>
-<div class="container">
-    <form id="Signin">
-  
-      <div class="headings">
-        <h1>yellow
-          pages</h1>
-  
-        <h2>Advertise Manager</h2>
-      </div>
-  
-      <div class="form-group ">
-        <label>Email</label>
-        <div class="input">
-  
+<div class="container-fluid ">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-1 col-md-7">
+      <form id="Signin" autocomplete="off">
+
+        <div class="headings justify-content-center">
+    
+            <h1 class="text-center">yellow
+              pages</h1>
+          <h2 class="text-center">Advertise Manager</h2>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label >Email</label>
           <input name="email" class="form-control " id="Emailinput" type="email">
         </div>
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <div class="input">
-  
+        <div class="form-group col-md-12"  >
+          <label>Password</label>
+
+
           <input name="password" class="form-control " id="Pwdinput" type="password">
+
         </div>
+        <div class="form-group">
+          <div class="inputaddon">
+            <input type="checkbox" class="chk_box">Remember Me
+            <span style="float: right" class="forgot"><a href="forgot.html">Forget password?</a></span>
+
+          </div>
       </div>
-      <div class="form-group">
-        <div class="inputaddon">
-          <input type="checkbox">Remember Me
-          <span class="forgot"><a href="forgot.html">Forget password?</a></span>
-  
+       
+
+
+        <div class="form-group">
+          <div class="btn">
+            <!-- <input id="btn1" [routerLink]="['/dashboard']" (click)="myClick()" [(ngModel)]="title"  class="btn1 btn-primary col-12" name="btn" type="button" value="SIGN IN"> -->
+    <button  type="submit" class="btn btn-primary  btn-block" [routerLink]="['/dashboard']" (click)="myClick()" [(ngModel)]="title" >SIGN IN</button>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <div class="btn">
-          <input id="btn1" [routerLink]="['/dashboard']" (click)="myClick()" [(ngModel)]="title"  class="btn1" name="btn" type="button" value="SIGN IN">
-  <!-- <button class="btn1" name="btn">SIGN IN</button> -->
+
+        <div class="form-group">
+          <div class="notmember col-md-10 offset-md-5">
+            Not a member? <a href="Register.html">Register</a>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <div class="notmember">
-          Not a member? <a href="Register.html">Register</a>
-        </div>
-      </div>
-    </form>
-    
+      </form>
+    </div>
   </div>
+</div>

@@ -1,29 +1,63 @@
 <!-- <p>login works!</p> -->
 <!-- (ngSubmit)="onSubmit(userForm.value)" -->
 <div class="container">
-  
 
-  
-<div class="row ">
-  
-    <div class="image col-md-5">
-      <h1>image has to be attached</h1>  
-     </div>
-     
-   <div class="loginform col-md-7 justify-content-center" >
-    <form  #userForm="ngForm" autocomplete="off">
-    <div class="form-group col-lg-9 col-sm-12 col-md-7">
-        <label >Email</label>
-        <input name="email" class="form-control" id="Emailinput" required type="email">
+
+
+  <div class="row ">
+
+    <div class="imagefirst col-md-7">
+      <!-- <h1>image has to be attached</h1> -->
+      <img class="admin" src="https://kontact-app-public.s3-ap-southeast-1.amazonaws.com/images/Login.png"  alt="Your image will appear here">
+      <!-- <img admin="" src="https://kontact-app-public.s3-ap-southeast-1.amazonaws.com/images/Login.png" alt="" class="fit-image"> -->
+    </div>
+
+    <div class="loginform col-md-5 ">
+      <form #userForm="ngForm" autocomplete="off">
+        <div class="headings col-lg-9 col-sm-12">
+    <img class="logo" src="../../assets/images/Logo.png" vspace="50" hspace="70"   >
+        <!-- <h5 class="text-center">Sign into your account to continue access</h5> -->
+        <div class="msg col-lg-9 col-sm-12">
+          <h6 class="text-center">Sign into your account to continue access</h6>
+        </div>
       </div>
-      <div class="form-group col-lg-9 col-sm-12 col-md-7 ">
-        <label>Password</label>
-        <input name="password" class="form-control" id="Pwdinput" required type="password" >
+        <div class="form-group col-md-12">
+          <label >Email</label>
+          <input name="email" class="form-control " id="Emailinput" type="email">
+        </div>
+        <div class="form-group col-md-12"  >
+          <label>Password</label>
+
+
+          <input name="password" class="form-control " id="Pwdinput" type="password">
+
+        </div>
+        <div class="form-group">
+          <div class="inputaddon">
+            <input type="checkbox" class="chk_box">Keep me Loggedin
+            <span style="float: right" class="forgot"><a href="forgot.html">Forget password?</a></span>
+
+          </div>
+      </div>
+       
+
+
+        <div class="form-group">
+          <div class="btn">
+            <!-- <input id="btn1" [routerLink]="['/dashboard']" (click)="myClick()" [(ngModel)]="title"  class="btn1 btn-primary col-12" name="btn" type="button" value="SIGN IN"> -->
+    <button  type="submit" class="btn btn-primary "  >SIGN IN</button>
+          </div>
         </div>
 
+        <div class="form-group">
+          <div class="notmember col-md-10 offset-md-5">
+            Don't have any account? <a href="Register.html">Signup Now</a>
+          </div>
+        </div>
+       
       </form>
-</div>
+    </div>
 
-</div>
+  </div>
 
 </div>

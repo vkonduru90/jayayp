@@ -1,1 +1,126 @@
-<p>register works!</p>
+<!-- (ngSubmit)="onSubmit(userForm.value)" -->
+<div class="container">
+
+
+
+    <div class="row ">
+
+        <div class="imagefirst col-md-5">
+
+            <img class="admin" src="https://kontact-app-public.s3-ap-southeast-1.amazonaws.com/images/Registration.png"
+                alt="Your image will appear here">
+            <!-- <img admin="" src="https://kontact-app-public.s3-ap-southeast-1.amazonaws.com/images/Login.png" alt="" class="fit-image"> -->
+        </div>
+
+        <div class="loginform col-md-7 ">
+            <form #userForm="ngForm" autocomplete="off">
+                <div class="headings col-lg-9 col-sm-12">
+                    <h1>Get started for free!</h1>
+                    <p>Our support hero will review your account and company info and be in touch with activation
+                        instructions shortly. If you have any questions, please contact <b>info@kontactapp.com</b></p>
+
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Name</label>
+                        <input name="entername" class="form-control " id="entername" type="text" placeholder="Name*">
+
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Email</label>
+                        <input name="Email" class="form-control " id="Email" type="Email" placeholder="Email*">
+
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>password</label>
+                        <input name="password" class="form-control " id="password" type="text" placeholder="password*">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Company Name</label>
+                        <input name="CompanyName" class="form-control " id="CompanyName" type="text"
+                            placeholder="Company Name*">
+
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Company Website</label>
+                        <input name="CompanyWebsite" class="form-control " id="CompanyWebsite" type="text"
+                            placeholder="Company Website*">
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group col-md-6">
+                        <select class="custom-select" id="industry">
+                            <option selected>Industry*</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <select class="custom-select" id="Counrty">
+                            <option selected>Counrty*</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label>description</label>
+                    <input name="descp" class="form-control " id="descp" type="text" placeholder="Short description/Tagline*">
+
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>About Company </label>
+                        <textarea name="descp" rows="5" class="form-control " id="about" type="textarea" placeholder="About Company*"></textarea>
+    
+                        </div>
+
+
+
+                <div class="form-group col-md-8 justify-content-center" >
+                    <div class="btn">
+                        <!-- <input id="btn1" [routerLink]="['/dashboard']" (click)="myClick()" [(ngModel)]="title"  class="btn1 btn-primary col-12" name="btn" type="button" value="SIGN IN"> -->
+                        <button type="submit" class="btn btn-primary ">Register</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="notmember col-md-10 offset-md-5">
+                        Already have an account? <a href="Register.html"><b>Login here</b></a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
